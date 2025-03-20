@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Template from "@/components/ui/transition";
 import { HoverBorderGradient } from "@/components/ui/HoverBorder";
-import SmoothScroll from "@/components/ui/Scrolling";
+
+import ScrollEffect from "@/components/ui/ScrollingEffect";
 export default function features() {
   return (
-    <SmoothScroll>
+    <ScrollEffect>
       <Template>
         <motion.div
           initial={{ x: -100, opacity: 0, scale: 0.8 }}
@@ -113,7 +114,7 @@ export default function features() {
                 </div>
               </div>
               <div className="mt-16 ml-20 transform hover:scale-105 transition-all duration-200">
-                <Link href="/features/1">
+                <Link href="/features/predict">
                   <HoverBorderGradient
                     containerClassName="rounded-full"
                     as="button"
@@ -192,7 +193,7 @@ export default function features() {
                 </div>
               </div>
               <div className="mt-16 ml-20 transform hover:scale-105 transition-all duration-200">
-                <Link href="/features/2">
+                <Link href="/features/trends">
                   <HoverBorderGradient
                     containerClassName="rounded-full"
                     as="button"
@@ -222,6 +223,6 @@ export default function features() {
           </div>
         </div>
       </Template>
-    </SmoothScroll>
+    </ScrollEffect>
   );
 }
