@@ -258,7 +258,7 @@ export default function Feature2() {
                   <div className="relative bg-black rounded-xl overflow-hidden p-4 w-full">
                     <div className="flex justify-between items-center mb-4">
                       <h3 className="text-xl font-semibold text-white mb-4">
-                        Latest Tweets about "{lastSearchTerm}"
+                        Latest Tweets about &quot;{lastSearchTerm}&quot;
                       </h3>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
